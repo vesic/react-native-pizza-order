@@ -5,6 +5,8 @@ import Header from "../common/Header";
 import Card from "../common/Card";
 import Section from "../common/Section";
 
+const CLEAR_CART = "clear_cart";
+
 class CartTab extends Component {
   totalPrice = () => {
     return this.props.pizzas
@@ -102,7 +104,7 @@ let mapStateToProps = state => {
 
 let mapDispatchToProps = dispatch => {
   return {
-    clearCart: () => dispatch({ type: "clear_cart" })
+    clearCart: () => dispatch({ type: CLEAR_CART })
   };
 };
 

@@ -5,7 +5,7 @@ import Card from "./common/Card";
 import Section from "./common/Section";
 import Header from "./common/Header";
 
-const ADD_PIZZA = 'add_pizza';
+const ADD_PIZZA = "add_pizza";
 
 class PizzaDetails extends Component {
   state = {
@@ -15,7 +15,7 @@ class PizzaDetails extends Component {
   };
 
   addToCart = () => {
-    let message = ''
+    let message = "";
     message += this.props.selectedPizza.name;
     message += this.state.nacho ? "\n + nacho" : "";
     message += this.state.taco ? "\n + taco" : "";
@@ -23,24 +23,25 @@ class PizzaDetails extends Component {
     Alert.alert(
       "Added to Cart",
       message,
-      [{ text: "Back to Pizzas", onPress: () => this.props.togglePizzaModal() }],
+      [
+        { text: "Back to Pizzas", onPress: () => this.props.togglePizzaModal() }
+      ],
       { cancelable: false }
     );
-    let pizza = Object.assign({},
-      this.props.selectedPizza,
-      { extras: {
+    let pizza = Object.assign({}, this.props.selectedPizza, {
+      extras: {
         nacho: this.state.nacho,
         taco: this.state.taco,
-        cheese: this.state.cheese,
-      } }
-    )
-    this.props.addPizza(pizza)
+        cheese: this.state.cheese
+      }
+    });
+    this.props.addPizza(pizza);
   };
 
   render() {
     return (
       <View>
-        <Header headerText="pizza details" />
+        <Header headerText={this.props.selectedPizza.name} />
         <Card>
           <Section>
             <Text>{this.props.selectedPizza.name}</Text>
@@ -86,7 +87,7 @@ class PizzaDetails extends Component {
             </View>
           </Section>
           <Section style={{ justifyContent: "flex-end" }}>
-            <Button title="Add to Cart" onPress={this.addToCart} />
+            <Button color="#f44336" title="Add to Cart" onPress={this.addToCart} />
           </Section>
           <Section>
             <Button
@@ -110,7 +111,7 @@ let mapStateToProps = state => {
 let mapDispatchToProps = dispatch => {
   return {
     togglePizzaModal: () => dispatch({ type: "toggle_pizza_modal" }),
-    addPizza: pizza => dispatch({type: ADD_PIZZA, payload: pizza})
+    addPizza: pizza => dispatch({ type: ADD_PIZZA, payload: pizza })
   };
 };
 

@@ -1,15 +1,12 @@
-const ADD_PIZZA = 'add_pizza';
-const CLEAR_CART = 'clear_cart';
+const ADD_PIZZA = "add_pizza";
+const CLEAR_CART = "clear_cart";
 
-const cartReducer = (state=[], action) => {
+const cartReducer = (state = [], action) => {
   switch (action.type) {
     case ADD_PIZZA:
-      return [
-          ...state,
-          action.payload
-      ]
+      return [...state, action.payload];
     case CLEAR_CART:
-      return []
+      return [];
     default:
       return state;
   }
