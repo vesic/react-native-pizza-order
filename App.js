@@ -4,8 +4,7 @@
  * @flow
  */
 
-
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Platform,
   StyleSheet,
@@ -14,23 +13,28 @@ import {
   Button,
   ListView,
   TouchableHighlight,
-  Alert
-} from 'react-native';
+  Alert,
+  TextInput,
+  TouchableNativeFeedback,
+  Modal,
+  TouchableOpacity
+} from "react-native";
+import { Provider, connect } from "react-redux";
+import { createStore } from "redux";
+import ItemsTab from "./src/components/tabs/ItemsTab";
+import CartTab from "./src/components/tabs/CartTab";
+import MainScreenNavigator from "./src/components/tabs/MainScreenNavigator";
+import { Header } from "./src/components/common/Header";
 
+import reducer from "./src/reducers";
+const store = createStore(reducer);
 
 export default class App extends Component<{}> {
   render() {
     return (
-      <Text>Text</Text>
+      <Provider store={store}>
+          <MainScreenNavigator />
+      </Provider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  }
-});

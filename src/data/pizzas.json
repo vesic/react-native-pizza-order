@@ -1,0 +1,74 @@
+[
+  {
+    "id":1,
+    "name":"CHORIZO, BEEF & PEPPERONI",
+    "price":10,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513525717/chorizo.small.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513525846/chorizo.big.png",
+    "description":"Spanish style chorizo, NZ ground beef, pepperoni, capsicum and stretchy mozzarella cheese topped with oregano and fresh sliced spring onion"
+  },
+  {
+    "id":2,
+    "name":"ITALIAN DELI",
+    "price":15,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513526086/italian.small.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513526087/italian.big.png",
+    "description":"Spanish style chorizo, pepperoni, fire roasted peppers, Italian sausage, olives and red onion topped with stretchy mozzarella cheese and oregano"
+  },
+  {
+    "id":3,
+    "name":"EIGHT MEATS",
+    "price":12,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513526328/eight.small_zmc6ez.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513526332/eight.big_cbx6s3.png",
+    "description":"The ultimate combination of your favourite meaty toppings! Succulent chicken, pepperoni, NZ ground beef, Manuka smoked ham, pork & fennel sausage, Italian sausage, chorizo with crispy rasher bacon"
+  },
+  {
+    "id":4,
+    "name":"GARDEN VEG WITH BUTTER SAUCE",
+    "price":20,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513526421/garden.small_rad82d.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513526425/garden.big_rvcbgg.png",
+    "description":"Creamy feta, fresh spinach, capsicum, tomato, red onion and stretchy mozzarella on a creme fraiche base topped with fresh spring onion and an Indian butter sauce"
+  },
+  {
+    "id":5,
+    "name":"SPICY BBQ PORK & BACON",
+    "price":18,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513526578/spicy.small_i9ylzd.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513526579/spicy.big_fw1ikm.png",
+    "description":"Lots of stretchy mozzarella cheese, pork & fennel sausage, crispy rasher bacon, pineapple, jalapenos, red onion on a BBQ sauce base, topped with fresh spring onion & a BBQ sauce swirl"
+  },
+  {
+    "id":6,
+    "name":"SUPREME",
+    "price":15,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513526694/supreme.small_teha6i.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513526697/supreme.big_rdni3x.png",
+    "description":"Pepperoni, rasher bacon, capsicum, ground beef, Italian sausage, mushroom, pineapple, topped with oregano & fresh sliced spring onion"
+  },
+  {
+    "id":7,
+    "name":"BBQ MEATLOVERS",
+    "price":10,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513526833/bbq.small_bpqmua.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513526834/bbq.big_rkylj5.png",
+    "description":"Rasher bacon, pepperoni, Manuka smoked ham, ground beef, Italian sausage & mozzarella, topped with a BBQ sauce swirl"
+  },
+  {
+    "id":8,
+    "name":"DOUBLE BACON CHEESEBURGER",
+    "price":8,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513526971/double_g3ubcg.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513526972/double.big_wm7leo.png",
+    "description":"Ground beef, rasher bacon, mozzarella on a BBQ base topped with mayonnaise"
+  },
+  {
+    "id":9,
+    "name":"GODFATHER",
+    "price":20,
+    "imgSmall":"http://res.cloudinary.com/vesic/image/upload/v1513527151/godfather.small_mc4lyb.png",
+    "imgLarge":"http://res.cloudinary.com/vesic/image/upload/v1513527152/godfather.big_fvx0ln.png",
+    "description":"Pepperoni, Italian sausage, fresh tomato, capsicum, olives, mozzarella & oregano on a tomato & garlic sauce base"
+  }
+]
